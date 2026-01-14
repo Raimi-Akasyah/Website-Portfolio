@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class="header">
+        <div class="side-nav">
+        <a href="#" class="logo">
+            <img src="ra.src.png" class="logo-img">
+            <img src="ra.src.png" class="logo-icon">
+            </a>
+            <ul class="nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-address-card"></i><p>Home Page</p></a></li>
+            <li><a href="biodata.html"><i class="fa-sharp fa-solid fa-user"></i><p>Biodata</p></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-video"></i><p>Gallery</p></a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-address-book"></i><p>Contact</p></a></li>
+            <li><a href="wishlist.html"><i class="fa-solid fa-check"></i><p>Wish List</p></a></li>    
+            </ul>
+        </div>
+        </div>
+        <div class="container">
+        <div class="image-container">
+            <a href="index.html"><h1>Home</h1></a>
+            <div class="image"><img src="IMG-20200911-WA0017.jpg" alt=""></div>
+            <div class="image"><img src="IMG-20200911-WA0033.jpg" alt=""></div>
+            <div class="image"><img src="1579012125597.jpg" alt=""></div>
+            <div class="image"><img src="1579012134691.jpg" alt=""></div>
+            <div class="image"><img src="IMG-20200305-WA0030.jpg" alt=""></div>
+            <div class="image"><img src="20180613_120006.png" alt=""></div>
+            <div class="image"><img src="CIMG5516.JPG" alt=""></div>
+            <div class="image"><img src="CIMG5271.JPG" alt=""></div>
+            <div class="image"><img src="CIMG5043.JPG" alt=""></div>
+            <div class="image"><img src="IMG_20190427_104826_380.jpg" alt=""></div>
+            <div class="image"><img src="IMG_20211002_021326_307.jpg" alt=""></div>
+            <div class="image"><img src="IMG_20211002_154943_769.webp" alt=""></div>
+            <div class="image"><img src="IMG_20220523_151520_905.jpg" alt=""></div>
+            <div class="image"><img src="IMG_20220530_125602_344.JPG" alt=""></div>
+            <div class="image"><img src="IMG_20220715_165924_219.jpg" alt=""></div>
+            <div class="popup-image">
+            <span>&times;</span>
+            <img src="IMG-20200911-WA0017.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+        });
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
