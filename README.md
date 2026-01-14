@@ -21,7 +21,3 @@ A modern, responsive personal portfolio developed to showcase my skills, project
 - `biodata.html`: Detailed background and animated skills visualization.
 - `gallery.html`: Interactive photo/project showcase.
 - `contact.html`: Professional contact form and social media links.
-
-## 🚀 How to View
-1. Clone this repository.
-2. Open `index.html` in any modern web browser.
